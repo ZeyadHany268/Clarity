@@ -1,3 +1,12 @@
+/* Reset */
+*
+{
+    box-sizing:border-box;
+}
+/* Smooth Scroll */
+html{
+    scroll-behavior:smooth;
+}
 /* =========================================
    CSS CUSTOM PROPERTIES
    ========================================= */
@@ -25,7 +34,12 @@
   --orange-soft: #fff1e7;
 
   /* Gradients */
-  --grad-primary: linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%);
+  --grad-primary: linear-gradient(
+    135deg,
+    #fb923c 0%,
+    #f97316 50%,
+    #ea580c 100%
+  );
   --grad-secondary: linear-gradient(135deg, #fdba74 0%, #fb923c 100%);
   --grad-text: linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%);
 
@@ -45,7 +59,6 @@
   --radius-card: 20px;
   --radius-sm: 10px;
 }
-
 
 /* =========================================
    NAVBAR
@@ -146,7 +159,9 @@
   font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 .nav-btn-start:hover {
   background: var(--orange-hover);
@@ -293,7 +308,6 @@
   border: none;
 }
 
-
 /* =========================================
    HERO
    ========================================= */
@@ -308,7 +322,11 @@
 .hero-bg-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 70% at 5% 50%, rgba(232, 82, 10, 0.07) 0%, transparent 60%);
+  background: radial-gradient(
+    ellipse 65% 70% at 5% 50%,
+    rgba(232, 82, 10, 0.07) 0%,
+    transparent 60%
+  );
   pointer-events: none;
   z-index: 0;
 }
@@ -433,7 +451,9 @@
   padding: 14px 32px;
   font-weight: 700;
   font-size: 1rem;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
   letter-spacing: 0.01em;
 }
 .btn-hero-primary:hover {
@@ -451,7 +471,9 @@
   padding: 14px 28px;
   font-weight: 600;
   font-size: 1rem;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -486,7 +508,6 @@
   margin-top: 2px;
   font-weight: 400;
 }
-
 
 /* =========================================
    SERVICES
@@ -649,7 +670,6 @@
   transform: translateX(6px);
 }
 
-
 /* =========================================
    TECHNOLOGY
    ========================================= */
@@ -675,7 +695,9 @@
   padding: 2rem 1.75rem 1.75rem;
   height: 100%;
   border: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 .tc:hover {
   transform: translateY(-4px);
@@ -727,121 +749,295 @@
 }
 
 /* ── Card Backgrounds — Cloud ── */
-.tc-aws   { background: linear-gradient(135deg, #fef3e2 0%, #eccfa3 100%); }
-.tc-azure { background: linear-gradient(135deg, #e8f1fe 0%, #c8dcfd 100%); }
-.tc-gcp   { background: linear-gradient(135deg, #fde8e8 0%, #fbc8c8 100%); }
-.tc-docker{ background: linear-gradient(135deg, #e8f1fe 0%, #c8dcfd 100%); }
-.tc-k8s   { background: linear-gradient(135deg, #f0eafe 0%, #ddd0fa 100%); }
-.tc-cicd  { background: linear-gradient(135deg, #edf0f5 0%, #d8dfe9 100%); }
+.tc-aws {
+  background: linear-gradient(135deg, #fef3e2 0%, #eccfa3 100%);
+}
+.tc-azure {
+  background: linear-gradient(135deg, #e8f1fe 0%, #c8dcfd 100%);
+}
+.tc-gcp {
+  background: linear-gradient(135deg, #fde8e8 0%, #fbc8c8 100%);
+}
+.tc-docker {
+  background: linear-gradient(135deg, #e8f1fe 0%, #c8dcfd 100%);
+}
+.tc-k8s {
+  background: linear-gradient(135deg, #f0eafe 0%, #ddd0fa 100%);
+}
+.tc-cicd {
+  background: linear-gradient(135deg, #edf0f5 0%, #d8dfe9 100%);
+}
 
 /* ── Card Backgrounds — Frontend ── */
-.tc-react   { background: linear-gradient(135deg, #e6f7fd 0%, #c2ecf9 100%); }
-.tc-next    { background: linear-gradient(135deg, #f1f5f9 0%, #dde4ee 100%); }
-.tc-vue     { background: linear-gradient(135deg, #eaf7f0 0%, #c8edda 100%); }
-.tc-angular { background: linear-gradient(135deg, #fde8ec 0%, #fac8d0 100%); }
-.tc-tailwind{ background: linear-gradient(135deg, #e0f6fe 0%, #b8ebfc 100%); }
-.tc-vite    { background: linear-gradient(135deg, #eeeefe 0%, #d4d4fc 100%); }
+.tc-react {
+  background: linear-gradient(135deg, #e6f7fd 0%, #c2ecf9 100%);
+}
+.tc-next {
+  background: linear-gradient(135deg, #f1f5f9 0%, #dde4ee 100%);
+}
+.tc-vue {
+  background: linear-gradient(135deg, #eaf7f0 0%, #c8edda 100%);
+}
+.tc-angular {
+  background: linear-gradient(135deg, #fde8ec 0%, #fac8d0 100%);
+}
+.tc-tailwind {
+  background: linear-gradient(135deg, #e0f6fe 0%, #b8ebfc 100%);
+}
+.tc-vite {
+  background: linear-gradient(135deg, #eeeefe 0%, #d4d4fc 100%);
+}
 
 /* ── Card Backgrounds — Backend ── */
-.tc-node  { background: linear-gradient(135deg, #eaf7ee 0%, #c8edcf 100%); }
-.tc-python{ background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%); }
-.tc-go    { background: linear-gradient(135deg, #e0f6fb 0%, #b8eaf6 100%); }
-.tc-java  { background: linear-gradient(135deg, #feeae2 0%, #fdd0bc 100%); }
-.tc-dotnet{ background: linear-gradient(135deg, #ede8fb 0%, #d4c8f5 100%); }
-.tc-ruby  { background: linear-gradient(135deg, #fde8ec 0%, #fabcc6 100%); }
+.tc-node {
+  background: linear-gradient(135deg, #eaf7ee 0%, #c8edcf 100%);
+}
+.tc-python {
+  background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%);
+}
+.tc-go {
+  background: linear-gradient(135deg, #e0f6fb 0%, #b8eaf6 100%);
+}
+.tc-java {
+  background: linear-gradient(135deg, #feeae2 0%, #fdd0bc 100%);
+}
+.tc-dotnet {
+  background: linear-gradient(135deg, #ede8fb 0%, #d4c8f5 100%);
+}
+.tc-ruby {
+  background: linear-gradient(135deg, #fde8ec 0%, #fabcc6 100%);
+}
 
 /* ── Card Backgrounds — Mobile ── */
-.tc-flutter { background: linear-gradient(135deg, #e0f6fe 0%, #b8eafc 100%); }
-.tc-swift   { background: linear-gradient(135deg, #fff0e6 0%, #ffd8bc 100%); }
-.tc-android { background: linear-gradient(135deg, #eafbf0 0%, #c8f0d4 100%); }
-.tc-xamarin { background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%); }
-.tc-pwa     { background: linear-gradient(135deg, #fef0e8 0%, #fdd8c2 100%); }
+.tc-flutter {
+  background: linear-gradient(135deg, #e0f6fe 0%, #b8eafc 100%);
+}
+.tc-swift {
+  background: linear-gradient(135deg, #fff0e6 0%, #ffd8bc 100%);
+}
+.tc-android {
+  background: linear-gradient(135deg, #eafbf0 0%, #c8f0d4 100%);
+}
+.tc-xamarin {
+  background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%);
+}
+.tc-pwa {
+  background: linear-gradient(135deg, #fef0e8 0%, #fdd8c2 100%);
+}
 
 /* ── Card Backgrounds — Database ── */
-.tc-postgres{ background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%); }
-.tc-mongo   { background: linear-gradient(135deg, #eafbf0 0%, #c8f0d4 100%); }
-.tc-redis   { background: linear-gradient(135deg, #fde8ec 0%, #fac8d0 100%); }
-.tc-mysql   { background: linear-gradient(135deg, #e0f6fb 0%, #b8e8f5 100%); }
-.tc-elastic { background: linear-gradient(135deg, #fffbe6 0%, #fef0b8 100%); }
-.tc-graphql { background: linear-gradient(135deg, #fde8f5 0%, #f9c8ea 100%); }
+.tc-postgres {
+  background: linear-gradient(135deg, #e6f0fb 0%, #c4d9f5 100%);
+}
+.tc-mongo {
+  background: linear-gradient(135deg, #eafbf0 0%, #c8f0d4 100%);
+}
+.tc-redis {
+  background: linear-gradient(135deg, #fde8ec 0%, #fac8d0 100%);
+}
+.tc-mysql {
+  background: linear-gradient(135deg, #e0f6fb 0%, #b8e8f5 100%);
+}
+.tc-elastic {
+  background: linear-gradient(135deg, #fffbe6 0%, #fef0b8 100%);
+}
+.tc-graphql {
+  background: linear-gradient(135deg, #fde8f5 0%, #f9c8ea 100%);
+}
 
 /* ── Icon Background Colors — Cloud ── */
-.tc-icon-aws   { background: #f90; }
-.tc-icon-azure { background: #0078d4; }
-.tc-icon-gcp   { background: #ea4335; }
-.tc-icon-docker{ background: #2496ed; }
-.tc-icon-k8s   { background: #7c3aed; }
-.tc-icon-cicd  { background: #334155; }
+.tc-icon-aws {
+  background: #f90;
+}
+.tc-icon-azure {
+  background: #0078d4;
+}
+.tc-icon-gcp {
+  background: #ea4335;
+}
+.tc-icon-docker {
+  background: #2496ed;
+}
+.tc-icon-k8s {
+  background: #7c3aed;
+}
+.tc-icon-cicd {
+  background: #334155;
+}
 
 /* ── Icon Background Colors — Frontend ── */
-.tc-icon-react   { background: #0ea5e9; }
-.tc-icon-next    { background: #0f172a; }
-.tc-icon-vue     { background: #42b883; }
-.tc-icon-angular { background: #dd0031; }
-.tc-icon-tailwind{ background: #06b6d4; }
-.tc-icon-vite    { background: #646cff; }
+.tc-icon-react {
+  background: #0ea5e9;
+}
+.tc-icon-next {
+  background: #0f172a;
+}
+.tc-icon-vue {
+  background: #42b883;
+}
+.tc-icon-angular {
+  background: #dd0031;
+}
+.tc-icon-tailwind {
+  background: #06b6d4;
+}
+.tc-icon-vite {
+  background: #646cff;
+}
 
 /* ── Icon Background Colors — Backend ── */
-.tc-icon-node  { background: #339933; }
-.tc-icon-python{ background: #3776ab; }
-.tc-icon-go    { background: #00acd7; }
-.tc-icon-java  { background: #ea4c13; }
-.tc-icon-dotnet{ background: #512bd4; }
-.tc-icon-ruby  { background: #cc342d; }
+.tc-icon-node {
+  background: #339933;
+}
+.tc-icon-python {
+  background: #3776ab;
+}
+.tc-icon-go {
+  background: #00acd7;
+}
+.tc-icon-java {
+  background: #ea4c13;
+}
+.tc-icon-dotnet {
+  background: #512bd4;
+}
+.tc-icon-ruby {
+  background: #cc342d;
+}
 
 /* ── Icon Background Colors — Mobile ── */
-.tc-icon-flutter { background: #54c5f8; }
-.tc-icon-swift   { background: #f05138; }
-.tc-icon-android { background: #3ddc84; }
-.tc-icon-xamarin { background: #3498db; }
-.tc-icon-pwa     { background: var(--orange); }
+.tc-icon-flutter {
+  background: #54c5f8;
+}
+.tc-icon-swift {
+  background: #f05138;
+}
+.tc-icon-android {
+  background: #3ddc84;
+}
+.tc-icon-xamarin {
+  background: #3498db;
+}
+.tc-icon-pwa {
+  background: var(--orange);
+}
 
 /* ── Icon Background Colors — Database ── */
-.tc-icon-postgres{ background: #336791; }
-.tc-icon-mongo   { background: #00ed64; }
-.tc-icon-redis   { background: #dc382c; }
-.tc-icon-mysql   { background: #00618a; }
-.tc-icon-elastic { background: #f04e98; }
-.tc-icon-graphql { background: #e535ab; }
+.tc-icon-postgres {
+  background: #336791;
+}
+.tc-icon-mongo {
+  background: #00ed64;
+}
+.tc-icon-redis {
+  background: #dc382c;
+}
+.tc-icon-mysql {
+  background: #00618a;
+}
+.tc-icon-elastic {
+  background: #f04e98;
+}
+.tc-icon-graphql {
+  background: #e535ab;
+}
 
 /* ── Tag Text Colors — Cloud ── */
-.tc-tag-aws  { color: #92400e; }
-.tc-tag-azure{ color: #1d4ed8; }
-.tc-tag-gcp  { color: #b91c1c; }
-.tc-tag-docker{ color: #1d4ed8; }
-.tc-tag-k8s  { color: #6d28d9; }
-.tc-tag-cicd { color: #475569; }
+.tc-tag-aws {
+  color: #92400e;
+}
+.tc-tag-azure {
+  color: #1d4ed8;
+}
+.tc-tag-gcp {
+  color: #b91c1c;
+}
+.tc-tag-docker {
+  color: #1d4ed8;
+}
+.tc-tag-k8s {
+  color: #6d28d9;
+}
+.tc-tag-cicd {
+  color: #475569;
+}
 
 /* ── Tag Text Colors — Frontend ── */
-.tc-tag-react   { color: #0369a1; }
-.tc-tag-next    { color: #334155; }
-.tc-tag-vue     { color: #15803d; }
-.tc-tag-angular { color: #b91c1c; }
-.tc-tag-tailwind{ color: #0369a1; }
-.tc-tag-vite    { color: #4338ca; }
+.tc-tag-react {
+  color: #0369a1;
+}
+.tc-tag-next {
+  color: #334155;
+}
+.tc-tag-vue {
+  color: #15803d;
+}
+.tc-tag-angular {
+  color: #b91c1c;
+}
+.tc-tag-tailwind {
+  color: #0369a1;
+}
+.tc-tag-vite {
+  color: #4338ca;
+}
 
 /* ── Tag Text Colors — Backend ── */
-.tc-tag-node  { color: #15803d; }
-.tc-tag-python{ color: #1d4ed8; }
-.tc-tag-go    { color: #0369a1; }
-.tc-tag-java  { color: #c2410c; }
-.tc-tag-dotnet{ color: #6d28d9; }
-.tc-tag-ruby  { color: #be123c; }
+.tc-tag-node {
+  color: #15803d;
+}
+.tc-tag-python {
+  color: #1d4ed8;
+}
+.tc-tag-go {
+  color: #0369a1;
+}
+.tc-tag-java {
+  color: #c2410c;
+}
+.tc-tag-dotnet {
+  color: #6d28d9;
+}
+.tc-tag-ruby {
+  color: #be123c;
+}
 
 /* ── Tag Text Colors — Mobile ── */
-.tc-tag-flutter { color: #0369a1; }
-.tc-tag-swift   { color: #c2410c; }
-.tc-tag-android { color: #15803d; }
-.tc-tag-xamarin { color: #1d4ed8; }
-.tc-tag-pwa     { color: var(--orange); }
+.tc-tag-flutter {
+  color: #0369a1;
+}
+.tc-tag-swift {
+  color: #c2410c;
+}
+.tc-tag-android {
+  color: #15803d;
+}
+.tc-tag-xamarin {
+  color: #1d4ed8;
+}
+.tc-tag-pwa {
+  color: var(--orange);
+}
 
 /* ── Tag Text Colors — Database ── */
-.tc-tag-postgres{ color: #1d4ed8; }
-.tc-tag-mongo   { color: #15803d; }
-.tc-tag-redis   { color: #b91c1c; }
-.tc-tag-mysql   { color: #0369a1; }
-.tc-tag-elastic { color: #92400e; }
-.tc-tag-graphql { color: #be123c; }
+.tc-tag-postgres {
+  color: #1d4ed8;
+}
+.tc-tag-mongo {
+  color: #15803d;
+}
+.tc-tag-redis {
+  color: #b91c1c;
+}
+.tc-tag-mysql {
+  color: #0369a1;
+}
+.tc-tag-elastic {
+  color: #92400e;
+}
+.tc-tag-graphql {
+  color: #be123c;
+}
 
 /* Utilities */
 .text-darke-brown {
@@ -850,7 +1046,6 @@
 .text-lg {
   font-size: 1.25rem !important;
 }
-
 
 /* =========================================
    TESTIMONIALS
@@ -1089,7 +1284,7 @@
 .testi-dot:hover {
   background: #f4a87e !important;
   width: 30px !important;
-  border-radius: 25% !important;
+  border-radius: 999px;
 }
 
 /* Legacy testimonial card (static variant) */
@@ -1133,7 +1328,6 @@
   color: oklch(44.6% 0.03 256.802);
   font-size: 0.85rem;
 }
-
 
 /* =========================================
    FAQ
@@ -1242,7 +1436,6 @@
   border-radius: 16px !important;
 }
 
-
 /* =========================================
    CONTACT
    ========================================= */
@@ -1255,7 +1448,7 @@
 .contact-box {
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Form Card */
@@ -1477,7 +1670,6 @@
   font-size: 0.85rem;
 }
 
-
 /* =========================================
    FOOTER
    ========================================= */
@@ -1567,5 +1759,4 @@
 .footer-made .heart {
   color: #ef4444;
 }
-
 
