@@ -1,0 +1,147 @@
+/* =========================================
+   RESPONSIVE STYLES
+   ========================================= */
+
+/* ── 991.98px — Tablet / collapsed navbar ── */
+@media (max-width: 991.98px) {
+  .mega-menu {
+    width: 100% !important;
+    max-width: 100%;
+    position: static !important;
+    transform: none !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .mega-menu-inner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .mega-col {
+    width: 100%;
+  }
+  .mega-heading {
+    margin-bottom: 14px;
+  }
+  .mega-item {
+    padding: 10px;
+  }
+  .mega-item-icon {
+    width: 44px;
+    height: 44px;
+  }
+  .mega-item strong {
+    font-size: 0.95rem;
+  }
+  .mega-item small {
+    font-size: 0.85rem;
+  }
+  .mega-cta {
+    margin-top: 10px;
+    padding: 18px;
+  }
+  .navbar-collapse {
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-bottom: 30px;
+  }
+}
+
+/* ── 991px — Hero layout ── */
+@media (max-width: 991px) {
+  .mega-col {
+    border-right: none !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0ebe4;
+    margin-bottom: 20px;
+  }
+  .mega-col:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hero-row {
+    padding: 3rem 0;
+  }
+  .hero-float-badge {
+    width: 58px;
+    height: 58px;
+    font-size: 1.4rem;
+    border-radius: 16px;
+  }
+  .hero-float-top {
+    top: -25px;
+    right: -25px;
+  }
+  .hero-float-bottom {
+    left: -25px;
+    bottom: -25px;
+  }
+}
+
+/* ── 768px — Testimonial header layout ── */
+@media (max-width: 768px) {
+  .testimonial-header {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 1rem;
+  }
+  .testi-metric {
+    display: none;
+  }
+  .testimonial-header > div:first-child {
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+  }
+}
+
+/* ── 767px — Hero & testimonial card ── */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-stats {
+    gap: 2rem !important;
+  }
+  .testi-card {
+    padding: 1.75rem 1.5rem;
+  }
+  .testi-quote {
+    font-size: 1rem;
+  }
+  .testi-metric-val {
+    font-size: 2rem;
+  }
+  .testi-quote-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+  }
+  .testi-quote-icon .fa-quote-left {
+    font-size: 1.2rem;
+  }
+  .testi-avatar,
+  .testi-avatar-wrap {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* ── 576px — Smallest hero badges ── */
+@media (max-width: 576px) {
+  .hero-float-badge {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 14px;
+  }
+}
