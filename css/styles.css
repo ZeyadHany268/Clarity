@@ -1,12 +1,22 @@
 /* Reset */
+
 *
 {
     box-sizing:border-box;
+    
 }
+
 /* Smooth Scroll */
+
 html{
     scroll-behavior:smooth;
 }
+
+main{
+  overflow:hidden;
+}
+
+
 /* =========================================
    CSS CUSTOM PROPERTIES
    ========================================= */
@@ -131,6 +141,7 @@ html{
 .navbar .nav-link.active::before {
   width: 100%;
 }
+
 .nav-link.active {
   color: var(--orange) !important;
   border: none;
@@ -1531,20 +1542,60 @@ html{
 .budget-btn:hover {
   border-color: #9b9691;
 }
-.budget-btn.active {
+.budget-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.budget-group input[type="radio"] {
+  display: none;
+}
+
+.budget-btn {
+  flex: 1;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.budget-btn span {
+  color: #9b8a80;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.budget-btn:hover {
+  border-color: #a19f9c;
+}
+
+.budget-group input:checked + .budget-btn {
   background: #fff1e7;
   border-color: #f97316;
   color: #ea580c;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.12);
 }
-.budget-btn.active:hover {
-  background: #fff1e7;
-  border-color: #eadfd6;
-  color: #ea580c;
+.budget-group input:checked + .budget-btn:hover {
+    border-color: #a19f9c;
+    box-shadow: 0 0 0 0 ;
+
 }
+
 
 /* Checkbox */
 .form-check-input {
-  border-color: #eadfd6 !important;
+  border-color: #bab5b2 !important;
 }
 .form-check-input:checked {
   background-color: #f97316 !important;
