@@ -136,7 +136,8 @@
                         <li class="nav-item"><a class="nav-link" href="#technology">Technology</a></li>
                         <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-form">Contact</a></li>
+                        </li>
                     </ul>
 
                     <!-- Auth / CTA -->
@@ -1352,7 +1353,7 @@
                             <h3 class="mb-1">Get Your Free Consultation</h3>
                             <p class="contact-form-sub mb-4">Fill out the form and we'll get back to you within 24 hours
                                 with a personalized proposal.</p>
-                            <div class="row g-4">
+                            <form class="row g-4" action="#" method="POST">
                                 <div class="col-sm-6">
                                     <label class="form-label">First Name <span class="req">*</span></label>
                                     <input type="text" class="form-control contact-input" placeholder="John" />
@@ -1395,13 +1396,26 @@
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Project Budget Range</label>
-                                    <div class="d-flex gap-2 flex-wrap align-items-stretch">
-                                        <button type="button" class="budget-btn active" data-bs-toggle="button">$25K –
-                                            $50K <span>Growth</span></button>
-                                        <button type="button" class="budget-btn" data-bs-toggle="button">$50K – $100K
-                                            <span>Scale</span></button>
-                                        <button type="button" class="budget-btn" data-bs-toggle="button">$100K+
-                                            <span>Enterprise</span></button>
+                                    <div class="budget-group">
+
+                                        <input type="radio" name="budget" id="budget1" value="25k-50k" checked>
+                                        <label for="budget1" class="budget-btn">
+                                            $25K – $50K
+                                            <span>Growth</span>
+                                        </label>
+
+                                        <input type="radio" name="budget" id="budget2" value="50k-100k">
+                                        <label for="budget2" class="budget-btn">
+                                            $50K – $100K
+                                            <span>Scale</span>
+                                        </label>
+
+                                        <input type="radio" name="budget" id="budget3" value="100k-plus">
+                                        <label for="budget3" class="budget-btn">
+                                            $100K+
+                                            <span>Enterprise</span>
+                                        </label>
+
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -1424,7 +1438,7 @@
                                         <i class="fa-solid fa-arrow-right ms-2"></i>
                                     </button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
 
